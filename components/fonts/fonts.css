@@ -1,0 +1,8 @@
+@font-face {
+    font-family: jura;
+    src: url(.../components/fonts/static/Jura-Bold) format('woff2');
+    src: url(/components/fonts/static) format('woff');
+
+    font-weight: normal;
+    font-style: normal;
+}
