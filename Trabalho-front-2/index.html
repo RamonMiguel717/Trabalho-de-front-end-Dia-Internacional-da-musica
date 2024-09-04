@@ -1,69 +1,103 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style/style.css">
-    <title>Dia Internacinal da musica</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <style>
-        /* CSS direto para o exemplo */
-        header {
-            position: fixed; /* Fixa o cabeçalho no topo da página */
-            width: 100%;
-            top: 0;
-            left: 0;
-            opacity: 1; /* Começa visível */
-            transition: opacity 0.5s ease; /* Transição suave para a opacidade */
-            background-color: rgb(41, 2, 53);; /* Cor de fundo para contraste */
-        }
+  <link rel="stylesheet" href="style/index.css">
 
-        .header-fade-out {
-            opacity: 0; /* Torna o header invisível */
-        }
-    </style>
+  <title>Dia Internacinal da musica</title>
 </head>
+
 <body>
-    <header>
-        
-        <a class = "logo" href="/">imagem logo</a>
+  <!-- Cabeçalho -->
+  <header class="cabecalho">
+    <div class="logo-container">
+      <a href="" class="logo-link">
+        <img src="/Trabalho-front-2/assets/Group 18.png" alt="" class="logo-image">
+      </a>
+    </div>
 
-        <div class="menu-toggle" id="menu-toggle">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </div>
-        <nav class="nav" id="nav">
-            <ul>
-                <a href="#"><li>Descubra mais sobre o <br><span>Dia Internacional da Musica</span></li></a>
-                <a href="#"><li>Descubra o Mood de Hoje! <br><span>Inicie seu teste agora!</span></li></a>
-                <a href="#"><li>Descubra tudo sobre o seu <br><span>gênero musical favorito</span></li></a>
-            </ul>
-        </nav>
-    </header>
-<main>
-    <div>
-        <h1>
-            Descubra os <br><span>5 Gêneros Musicais mais escutados este ano</span> 
+    <nav>
+      <ul class="lista">
+        <li class="lista-item"><a href="https://google.com.br">Sobre</a></li>
+        <li class="lista-item"><a href="https://google.com.br">Inicie o teste</a></li>
+        <li class="lista-item"><a href="https://google.com.br">Gêneros</a></li>
+
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Seção de apresentação -->
+  <section class="apresentacao">
+    <div class="apresentacao-container">
+      <!-- TEXTOS -->
+      <div>
+        <h1 class="apresentacao-title">
+          Descubra os <span class="apresentacao-title-span">5 Gêneros Musicais mais escutados </span>este ano
         </h1>
+      </div>
+      <!-- IMAGEM -->
+      <div>
+        <img src="assets/fone.png" alt="Headset" class="apresentacao-image">
+      </div>
     </div>
-    <div class="fone" id = "Fundo">
-        <h2>
-            <img src="/Trabalho-front-2/components/images/fone_de_ouvido.png">
-        </h2>
-    </div>
-</main>
+  </section>
 
-<script>
-    window.addEventListener("scroll", function() {
-        const header = document.getElementById("header");
-        if (window.scrollY > 50) { // Ajuste o valor de rolagem conforme necessário
-            header.classList.add("header-fade-out");
-        } else {
-            header.classList.remove("header-fade-out");
-        }
+  <!-- Seção do conteúdo principal -->
+  <main class="principal"></main>
+
+
+
+  <!-- <header>
+
+    <a class="logo" href="/">imagem logo</a>
+
+    <div class="menu-toggle" id="menu-toggle">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+    <nav class="nav" id="nav">
+      <ul>
+        <a href="#">
+          <li>Descubra mais sobre o <br><span>Dia Internacional da Musica</span></li>
+        </a>
+        <a href="#">
+          <li>Descubra o Mood de Hoje! <br><span>Inicie seu teste agora!</span></li>
+        </a>
+        <a href="#">
+          <li>Descubra tudo sobre o seu <br><span>gênero musical favorito</span></li>
+        </a>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="pagina">
+      <div class="texto" id="texto_id">
+        <h1>
+          Descubra os <br><span>5 Gêneros Musicais mais escutados este ano</span>
+        </h1>
+      </div>
+      <div class="fone" id="fone_id">
+        <img src="assets/fone.png">
+      </div>
+    </div>
+  </main> -->
+
+  <script>
+    window.addEventListener("scroll", function () {
+      const header = document.getElementById("header");
+      if (window.scrollY > 50) {
+        header.classList.add("header-fade-out");
+      } else {
+        header.classList.remove("header-fade-out");
+      }
     });
-</script>
+  </script>
 
 </body>
+
 </html>
