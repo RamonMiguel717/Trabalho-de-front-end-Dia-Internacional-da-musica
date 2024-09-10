@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="stylesheet" href="/style/index.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="logo-container">
+          <a href="/index.html" class="logo-link"><img src="/assets/Group 18.png" alt="" class="logo-image" ></a>
+        </div>
+
+        <nav>
+            <ul class="lista">
+              <li class="lista-item"><a href="/pages/sobre/sobre.html">Sobre</a></li>
+              <li class="lista-item"><a href="https://musictaste.space/home">Faça o teste</a></li>
+              <li class="lista-item"><a href="/pages/generos.html">Gêneros</a></li>
+      
+            </ul>
+          </nav>
+        </header>
+    
+    <section class="apresentacao">
+        <div class="generos">
+
+           <h1>Funk</h1>
+           <h2>Focado no ritmo e no groove, nasceu nos EUA na década de 1960, com influências do soul e jazz. James Brown é conhecido como o “Padrinho do Funk”.</h2>
+           <h1>Samba</h1>
+           <h2>Gênero brasileiro, mistura influências africanas e europeias, com forte presença de percussão e danças. É o ritmo predominante no Carnaval brasileiro.</h2>
+           <h1>Eletrônica</h1>
+           <h2>Abrange subgêneros como techno, house e trance, e é marcado pelo uso de sintetizadores e sons digitais. DJs como David Guetta e Daft Punk são famosos.</h2>
+           <h1>Classical</h1>
+           <h2>Música erudita, com composições estruturadas que datam de séculos passados. Nomes como Beethoven e Mozart são referências.</h2>
+           <h1>Country</h1>
+           <h2>De origem americana, nasceu da música folk e bluegrass. Suas letras geralmente tratam de temas rurais e cotidianos. Artistas como Johnny Cash são influentes.</h2>
+           <h1>Metal</h1>
+           <h2>Uma ramificação do rock, com sons pesados, guitarras distorcidas e vocais poderosos. Bandas como Metallica e Iron Maiden são marcos do gênero.</h2>
+           <h1>R&B (Rhythm and Blues)</h1>
+           <h2>Com raízes no blues, jazz e gospel, é um gênero que mistura ritmos suaves com letras românticas. Artistas como Stevie Wonder e Beyoncé o popularizaram.</h2>
+           <h1>MPB (Música Popular Brasileira)</h1>
+           <h2> Mistura de ritmos tradicionais brasileiros com influências estrangeiras, tem nomes como Caetano Veloso e Gilberto Gil como expoentes.</h2>
+           <h1>Gospel</h1>
+           <h2>Com forte presença nas igrejas, principalmente nos EUA, tem letras religiosas e é influenciado pelo soul e blues. Artistas como Mahalia Jackson são conhecidos.</h2>
+           <h1>Rock</h1> 
+           <h2> Surgido nos anos 1950, com influências do blues e do country, é caracterizado por guitarras elétricas, baixos marcantes e baterias fortes. Bandas como The Beatles e Led Zeppelin são ícones do gênero.</h2>
+           <h1>Pop</h1>
+           <h2> Voltado para as massas, com melodias fáceis e ritmos dançantes. Artistas como Michael Jackson e Madonna ajudaram a moldar o gênero, que domina as paradas musicais.</h2>
+           <h1>Hip-Hop</h1>
+           <h2>Nascido no Bronx, Nova York, nos anos 1970, é conhecido por batidas ritmadas, rimas faladas (rap) e elementos culturais como breakdance e graffiti. Nomes como Tupac e Jay-Z são influentes.</h2>
+           <h1>Jazz</h1>
+           <h2> Originado no início do século 20 nos EUA, combina improvisação com ritmos complexos e é marcado por instrumentos como trompete e saxofone. Louis Armstrong é uma lenda do gênero.</h2>
+           <h1>Blues</h1>
+           <h2>Nasceu no sul dos EUA no final do século 19, com raízes africanas. Caracteriza-se por melodias melancólicas e o uso da guitarra elétrica. B.B. King é um dos maiores nomes.</h2>
+           <h1>Reggae</h1>
+           <h2>Gênero jamaicano popularizado por Bob Marley, tem ritmos relaxados e mensagens de paz e resistência. Suas batidas são marcadas por ênfase no contratempo.</h2>
+        </div>
+    </section>
+</body>
+</html>
+<script>
+    document.querySelectorAll('.generos h1').forEach(function(item) {
+      item.addEventListener('click', function() {
+        this.classList.toggle('active');
+        this.nextElementSibling.style.display = this.classList.contains('active') ? 'block' : 'none';
+      });
+    });
+  </script>
